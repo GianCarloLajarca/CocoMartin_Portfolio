@@ -1,0 +1,31 @@
+@use "../abstract" as *;
+
+.header
+{
+    
+    .logo {
+        position: relative;
+            top: -3rem;
+            font-size: clamp(1.5rem, 5vw, 7rem);
+
+        @include mediaQueryMax {
+            top: -2rem;
+            font-size: clamp(4rem, 3vw, 4rem); 
+        }
+
+    }
+    ul {
+            @include mediaQueryMax{
+                opacity:0;
+            }
+        }
+
+    i {
+        font-size: clamp(3rem, 6vw, 3rem);
+        @include mediaQueryMax {
+            font-size: clamp(2.5rem, 6vw, 2.5rem);
+            }
+    }
+}
+
+    
